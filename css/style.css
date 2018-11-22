@@ -1,0 +1,82 @@
+.container {
+  max-width: 375px;
+  max-height:667px;
+  margin:0 auto;
+  background-color:#f0f0f0;
+  overflow:auto;
+}
+
+body {
+  font-family:'Roboto', sans-serif;
+  font-size:16px;
+  line-height:2em;
+  text-align:center;
+  color: #000;
+}
+
+h1 {
+  font-weight:bold;
+  font-size:24px;
+  margin-bottom:-10px;
+}
+
+h2 {
+  font-size:20px;
+  line-height:30px;
+  font-weight:normal;
+  border-bottom:1px solid #C9CACE;
+  margin-bottom:2px;
+  color: #1B6CE5;
+}
+
+input {
+  width:90%;
+  height:2em;
+  color:#999;
+  text-align:center;
+  border: 1px solid #f0f0f0;
+  background-color: #e8e8e8;
+  border-radius:10px;
+}
+
+.line, .destination, .frequency {
+  float:left;
+  box-sizing:border-box;
+  line-height:35px;
+  white-space:nowrap;
+}
+
+.bound {
+  clear:both;
+  display:inline-block;
+  width:100%;
+  margin-bottom:10px;
+}
+
+.busNum {
+  border:1px solid #1b6ce5;
+  border-radius:50%;
+  margin-left:20px;
+  max-height:35px;
+  margin-top:2px;
+  width:50%;
+}
+
+.brand {
+  font-size:35px;
+  line-height:40px;
+  letter-spacing:2px;
+  font-family:'Fugaz One', sans-serif;
+  font-weight:bold;
+}
+
+.line {
+  width: 20%;
+  margin-top:2px;
+}
+
+.destination, .frequency {
+  width:40%;
+  line-height:39px;
+  margin-top:2px;
+}
