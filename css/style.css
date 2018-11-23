@@ -1,7 +1,13 @@
+*, *:after, *before {
+  box-sizing:border-box;
+  }
+
 .container {
-  max-width: 375px;
+  height:500px;
   max-height:667px;
+  width:375px;
   margin:0 auto;
+  position:relative;
   background-color:#f0f0f0;
   overflow:auto;
 }
@@ -29,6 +35,11 @@ h2 {
   color: #1B6CE5;
 }
 
+a, a:active, a:visited, a:hover {
+  color: #1b6ce5;
+  text-decoration:none;
+}
+
 input {
   width:90%;
   height:2em;
@@ -39,11 +50,33 @@ input {
   border-radius:10px;
 }
 
+.header {
+  max-width:375px;
+  margin: 0 auto;
+  background-color:#f0f0f0;
+}
+
 .line, .destination, .frequency {
   float:left;
   box-sizing:border-box;
   line-height:35px;
   white-space:nowrap;
+}
+
+footer {
+  color: #1B6CE5;
+  position:static;
+  bottom:0px;
+  height:40px;
+  background-color:#f0f0f0;
+  margin:auto;
+  width:375px;
+  border-top:1px solid #999;
+}
+
+.backbutton {
+  height:45px;
+  float:left;
 }
 
 .bound {
@@ -65,11 +98,22 @@ input {
 .brand {
   font-size:35px;
   line-height:40px;
+  margin-left:-45px;
   letter-spacing:2px;
   font-family:'Fugaz One', sans-serif;
   font-weight:bold;
 }
 
+.fa-search {
+  color:#1b6ce5;
+}
+
+.bar {
+  margin:0 auto;
+  max-width:375px;
+  position:static;
+  max-height:25px;
+}
 .line {
   width: 20%;
   margin-top:2px;

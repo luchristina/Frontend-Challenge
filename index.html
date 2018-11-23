@@ -10,27 +10,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <section class="container">
-      <font class="brand">BusyBus</font>
+    <div class="bar">
+      <img src="images/bar.png" width="375px" alt="status bar">
+    </div>
+    <div class="header">
+      x<a href="#"><img src="images/back_button.png" class="backbutton" alt="back button"></a><font class="brand">BusyBus</font>
       <div class="search">
         <form>
-          <input type="text" value="Search bus line" name="search" onfocus='if(this.value=="Search bus line"){this.value="";}'> <i class="fas fa-search"></i>
-      </div>
+          <input type="text" value="Search bus line" name="search" onfocus='if(this.value=="Search bus line"){this.value="";}'> <a href="#"><i class="fas fa-search"></i></a></div>
+    </div>
+    <section class="container">
       <div class="data">
         <div class="bound">
           <h1>Eastbound</h1>
           <div class="line">
-            <h2>line</h2>
+            <h2>Line</h2>
             <div class="busNum">60</div>
             <div class="busNum">124</div>
           </div>
           <div class="destination">
-            <h2>destination</h2>
+            <h2>Destination</h2>
             Randolph/Harbor Dr<br>
             Navy Pier
           </div>
           <div class="frequency">
-            <h2>frequency</h2>
+            <h2>Frequency</h2>
             Every 20 minutes<br>
             Every 10 minutes
           </div>
@@ -38,24 +42,24 @@
         <div class="bound">
           <h1>Northbound</h1>
           <div class="line">
-            <h2>line</h2>
+            <h2>Line</h2>
             <div class="busNum">
               151
             </div>
           </div>
           <div class="destination">
-            <h2>destination</h2>
+            <h2>Destination</h2>
             Devon/Clark
           </div>
           <div class="frequency">
-            <h2>frequency</h2>
+            <h2>Frequency</h2>
             Every 16 minutes
           </div>
         </div>
         <div class="bound">
           <h1>Southbound</h1>
           <div class="line">
-            <h2>line</h2>
+            <h2>Line</h2>
             <div class="busNum">
               J14
             </div>
@@ -64,12 +68,12 @@
             </div>
           </div>
           <div class="destination">
-            <h2>destination</h2>
+            <h2>Destination</h2>
             103rd/Stony Island<br>
             Navy Pier
           </div>
           <div class="frequency">
-            <h2>frequency</h2>
+            <h2>Frequency</h2>
             Every 15 minutes<br>
             Every 10 minutes
           </div>
@@ -77,24 +81,24 @@
         <div class="bound">
           <h1>Reroute</h1>
           <div class="line">
-            <h2>line</h2>
+            <h2>Line</h2>
             <div class="busNum">
               6X
             </div>
           </div>
           <div class="destination">
-            <h2>destination</h2>
+            <h2>Destination</h2>
             Jackson Park Express
           </div>
           <div class="frequency">
-            <h2>frequency</h2>
+            <h2>Frequency</h2>
             N/A
           </div>
         </div>
         <div class="bound">
           <h1><nobr>Out of service</nobr></h1>
           <div class="line">
-            <h2>line</h2>
+            <h2>Line</h2>
             <div class="busNum">
               4
             </div>
@@ -106,7 +110,7 @@
             </div>
           </div>
           <div class="destination">
-            <h2>destination</h2>
+            <h2>Destination</h2>
             <div class="oosdest">
               Cottage Grove
             </div>
@@ -118,7 +122,7 @@
             </div>
           </div>
           <div class="frequency">
-            <h2>frequency</h2>
+            <h2>Frequency</h2>
             Resumes 12:10am<br>
             Resumes 12:10am<br>
             Resumes 6:00am
@@ -126,5 +130,8 @@
         </div>
         </div>
     </section>
+    <footer class="footer">
+      <a href="#">My Account</a>
+    </footer>
   </body>
 </html>
