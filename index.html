@@ -10,127 +10,67 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="bar">
+    <header>
+    <div class="statusbar">
       <img src="images/bar.png" width="375px" alt="status bar">
     </div>
-    <div class="header">
-      x<a href="#"><img src="images/back_button.png" class="backbutton" alt="back button"></a><font class="brand">BusyBus</font>
-      <div class="search">
-        <form>
-          <input type="text" value="Search bus line" name="search" onfocus='if(this.value=="Search bus line"){this.value="";}'> <a href="#"><i class="fas fa-search"></i></a></div>
-    </div>
-    <section class="container">
-      <div class="data">
-        <div class="bound">
-          <h1>Eastbound</h1>
-          <div class="line">
-            <h2>Line</h2>
-            <div class="busNum">60</div>
-            <div class="busNum">124</div>
-          </div>
-          <div class="destination">
-            <h2>Destination</h2>
-            Randolph/Harbor Dr<br>
-            Navy Pier
-          </div>
-          <div class="frequency">
-            <h2>Frequency</h2>
-            Every 20 minutes<br>
-            Every 10 minutes
-          </div>
-        </div>
-        <div class="bound">
-          <h1>Northbound</h1>
-          <div class="line">
-            <h2>Line</h2>
-            <div class="busNum">
-              151
-            </div>
-          </div>
-          <div class="destination">
-            <h2>Destination</h2>
-            Devon/Clark
-          </div>
-          <div class="frequency">
-            <h2>Frequency</h2>
-            Every 16 minutes
-          </div>
-        </div>
-        <div class="bound">
-          <h1>Southbound</h1>
-          <div class="line">
-            <h2>Line</h2>
-            <div class="busNum">
-              J14
-            </div>
-            <div class="busNum">
-              124
-            </div>
-          </div>
-          <div class="destination">
-            <h2>Destination</h2>
-            103rd/Stony Island<br>
-            Navy Pier
-          </div>
-          <div class="frequency">
-            <h2>Frequency</h2>
-            Every 15 minutes<br>
-            Every 10 minutes
-          </div>
-        </div>
-        <div class="bound">
-          <h1>Reroute</h1>
-          <div class="line">
-            <h2>Line</h2>
-            <div class="busNum">
-              6X
-            </div>
-          </div>
-          <div class="destination">
-            <h2>Destination</h2>
-            Jackson Park Express
-          </div>
-          <div class="frequency">
-            <h2>Frequency</h2>
-            N/A
-          </div>
-        </div>
-        <div class="bound">
-          <h1><nobr>Out of service</nobr></h1>
-          <div class="line">
-            <h2>Line</h2>
-            <div class="busNum">
-              4
-            </div>
-            <div class="busNum">
-              20
-            </div>
-            <div class="busNum">
-              157
-            </div>
-          </div>
-          <div class="destination">
-            <h2>Destination</h2>
-            <div class="oosdest">
-              Cottage Grove
-            </div>
-            <div class="oosdest">
-              Madison
-            </div>
-            <div class="oosdest">
-              Streeterville/Taylor
-            </div>
-          </div>
-          <div class="frequency">
-            <h2>Frequency</h2>
-            Resumes 12:10am<br>
-            Resumes 12:10am<br>
-            Resumes 6:00am
-          </div>
-        </div>
-        </div>
+    <nav>
+      <a href="#"><i class="fas fa-chevron-left"></i></a><h1>Washington/State</h1>
+    </nav>
+    </header>
+    <section class="buslist">
+      <ul class="busrow">
+        <li class="bushead">Bus</li>
+        <li class="destinationhead">Destination</li>
+        <li class="leavebyhead">Leave By</li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">60</li>
+        <li class="destination">Randolph/Harbor Dr<br><span class="description">Eastbound</span></li>
+        <li class="leaveby">12:00pm<br><span class="description">Every 20 min</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">124</li>
+        <li class="destination">Navy Pier<br><span class="description">Eastbound</span></li>
+        <li class="leaveby">12:00pm<br><span class="description">Every 10 min</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">151</li>
+        <li class="destination">Devon/Clark<br><span class="description">Northbound</span></li>
+        <li class="leaveby">12:02pm<br><span class="description">Every 16 min</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">J14</li>
+        <li class="destination">103rd/Stony Island<br><span class="description">Southbound</span></li>
+        <li class="leaveby">12:03pm<br><span class="description">Every 15 min</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">124</li>
+        <li class="destination">Navy Pier<br><span class="description">Southbound</span></li>
+        <li class="leaveby">12:03pm<br><span class="description">Every 10 min</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">6X</li>
+        <li class="destination">Jackson Park Express<br><span class="reroute">Reroute</span></li>
+        <li class="leaveby">N/A<br><span class="description">N/A</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">4</li>
+        <li class="destination">Cottage Grove<br><span class="outofservice">Out of service</span></li>
+        <li class="leaveby">N/A<br><span class="description">Resumes 12:10am</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">20</li>
+        <li class="destination">Madison<br><span class="outofservice">Out of service</span></li>
+        <li class="leaveby">N/A<br><span class="description">Resumes 12:10am</span></li>
+      </ul>
+      <ul class="busrow">
+        <li class="bus">157</li>
+        <li class="destination">Streetsville/Taylor<br><span class="outofservice">Out of service</span></li>
+        <li class="leaveby">N/A<br><span class="description">Resumes 6:00am</span></li>
+      </ul>
     </section>
-    <footer class="footer">
+    <footer>
       <a href="#">My Account</a>
     </footer>
   </body>

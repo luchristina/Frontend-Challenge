@@ -1,33 +1,27 @@
-*, *:after, *before {
+*, *:after, *:before {
   box-sizing:border-box;
   }
-
-.container {
-  height:500px;
-  max-height:667px;
-  width:375px;
-  margin:0 auto;
-  position:relative;
-  background-color:#f0f0f0;
-  overflow:auto;
-}
 
 body {
   font-family:'Roboto', sans-serif;
   font-size:16px;
-  line-height:2em;
+  line-height:16px;
+  background-color:#000;
   text-align:center;
   color: #000;
 }
 
 h1 {
   font-weight:bold;
-  font-size:24px;
-  margin-bottom:-10px;
+  text-align:left;
+  height:30px;
+  margin-left:50px;
+  padding-top:5px;
 }
 
+
 h2 {
-  font-size:20px;
+  font-size:16px;
   line-height:30px;
   font-weight:normal;
   border-bottom:1px solid #C9CACE;
@@ -40,87 +34,138 @@ a, a:active, a:visited, a:hover {
   text-decoration:none;
 }
 
+section, ul{
+  background-color:#f0f0f0;
+}
+
 input {
   width:90%;
   height:2em;
   color:#999;
   text-align:center;
-  border: 1px solid #f0f0f0;
-  background-color: #e8e8e8;
+  border: 0px;
+  background-color: #EEEEEE;
   border-radius:10px;
 }
 
-.header {
+nav {
   max-width:375px;
   margin: 0 auto;
-  background-color:#f0f0f0;
-}
-
-.line, .destination, .frequency {
-  float:left;
-  box-sizing:border-box;
-  line-height:35px;
-  white-space:nowrap;
+  background-color:#fff;
 }
 
 footer {
   color: #1B6CE5;
   position:static;
+  background-color:#fff;
   bottom:0px;
-  height:40px;
-  background-color:#f0f0f0;
+  height:20px;
   margin:auto;
+  clear:both;
+  font-size:14px;
   width:375px;
-  border-top:1px solid #999;
+  border-top:1px solid #e8e8e8;
 }
 
-.backbutton {
-  height:45px;
+.fa-chevron-left {
+  height:30px;
+  padding-top:6px;
+  padding-left:10px;
   float:left;
 }
 
-.bound {
-  clear:both;
-  display:inline-block;
-  width:100%;
-  margin-bottom:10px;
+li {
+  float:left;
 }
 
-.busNum {
-  border:1px solid #1b6ce5;
-  border-radius:50%;
-  margin-left:20px;
-  max-height:35px;
-  margin-top:2px;
-  width:50%;
-}
-
-.brand {
-  font-size:35px;
-  line-height:40px;
-  margin-left:-45px;
-  letter-spacing:2px;
-  font-family:'Fugaz One', sans-serif;
-  font-weight:bold;
+.buslist {
+  width:375px;
+  background-color:#fff;
+  overflow:auto;
+  margin:0 auto;
 }
 
 .fa-search {
   color:#1b6ce5;
 }
 
-.bar {
+.search {
+  clear:both;
+}
+
+.statusbar {
   margin:0 auto;
   max-width:375px;
+  background-color:#fff;
   position:static;
   max-height:25px;
 }
-.line {
-  width: 20%;
-  margin-top:2px;
+
+.bushead, .destinationhead, .leavebyhead {
+  line-height:2em;
+  color: #1b6ce5;
+  border-bottom:1px solid #e8e8e8;
+  margin-bottom:2px;
 }
 
-.destination, .frequency {
-  width:40%;
-  line-height:39px;
-  margin-top:2px;
+.bushead {
+  width:15%;
+  padding-left:10px;
+  text-align:left;
+}
+
+.destinationhead {
+  width:60%;
+}
+
+.leavebyhead {
+  width:25%;
+  padding-right:10px;
+  text-align:right;
+}
+.bus {
+  width:10%;
+  height:2.5em;
+  padding-top:9px;
+  margin-left:5px;
+  text-align:center;
+  border:1px solid #1b6ce5;
+  border-radius:50%;
+}
+
+.destination {
+  width:60%;
+  text-align:left;
+  padding-left:60px;
+}
+
+.leaveby {
+  width:28%;
+  padding-right:10px;
+  text-align:right;
+}
+
+.reroute {
+  color: #DE7516;
+  font-style:italic;
+  font-size:10px;
+}
+
+.outofservice {
+  color: red;
+  font-style:italic;
+  font-size:10px;
+}
+
+.description {
+  color: #999;
+  font-size:10px;
+  white-space: nowrap;
+  display:inline-block;
+}
+
+.bus, .destination, .leaveby {
+  font-size:14px;
+  white-space:nowrap;
+  padding-bottom:15px;
 }
